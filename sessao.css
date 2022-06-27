@@ -1,8 +1,9 @@
 .painel{
-    padding: 20px;
-    max-width: 500px;
-    margin: auto;
-    display: block;
+    margin-top: 30px;
+}
+
+.painel-usuario{
+    margin-top: 30px;
 }
 
 .nome-sessao{

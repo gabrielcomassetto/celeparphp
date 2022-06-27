@@ -9,6 +9,7 @@ include ('verificarlogin.php')
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mudar senha</title>
+  <script src="mudasenha.js"></script>
   <link rel ="stylesheet" href="sessao.css">
   <link rel="stylesheet" href="mudarsenha.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -33,7 +34,7 @@ include ('verificarlogin.php')
 </div>
 
 
-<form class="container-senha" method="post" action="mudarsenhalogica.php">
+<form class="container-senha" method="post" name="mudarsenha" action="mudarsenhalogica.php">
 
             <div class="form-floating">
               <input type="password" name="velhasenha" class="form-control" id="floatingPassword" placeholder="Password">
@@ -51,7 +52,7 @@ include ('verificarlogin.php')
             </div>
 
             <div class="botao">
-              <button class="btn btn-primary" name="change" type="submit">Button</button>
+              <button class="btn btn-primary" onclick="valida()" name="change" type="submit">Enviar</button>
             </div>
 
 </form>
