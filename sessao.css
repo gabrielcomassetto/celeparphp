@@ -1,0 +1,35 @@
+.painel{
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
+
+.nome-sessao{
+    font-size: 12px;
+    color: rgb(240, 240, 240);
+}
+
+.botao-sair{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.mudarsenha{
+    font-size: 12px;
+}
+
+.sessao{
+    position: absolute;
+    margin-left: 70%;
+    top: 10px;
+}
+
+@media(max-width: 600px){
+    
+    .sessao{
+        position: absolute;
+        margin-left: 0;
+
+    }
+}
