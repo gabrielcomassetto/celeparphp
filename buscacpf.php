@@ -2,6 +2,11 @@
 include_once("conexao.php");
 include ('verificarlogin.php');
 
+if ($_SESSION['nivel'] != 5){
+    header('Location: telausuario.php');
+    exit();
+}
+
 $filtro = isset($_GET['filtro']) ? $_GET['filtro'] : "";
 
 $query = "SELECT * FROM persons WHERE cpf like '%$filtro%' order by nome";
