@@ -2,10 +2,11 @@
 
 $hostname = "localhost";
 $user = "root";
-$password = "";
-$database = "testedb";
-$conexao = mysqli_connect($hostname, $user, $password, $database);
+$passaword = "";
+$database = "test";
+$conexao = mysqli_connect($hostname, $user, $passaword, $database);
 
-if (!$conexao) {
-    echo "falha";
-} 
+if (!$conexao){
+    echo "Falha na conexao";
+}
+?>
